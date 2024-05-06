@@ -1,0 +1,29 @@
+# Connector Name
+name: Evergy Connector
+
+# Source Connector Configuration
+source:
+  connectionSpecification:
+    properties:
+      username:
+        type: string
+        title: Username
+        description: esburmeister
+      password:
+        type: string
+        title: Password
+        description: ha)VZYP@gu12 
+
+# Destination Connector Configuration
+#destination:
+#  supportedSyncModes:
+#    - full_refresh
+#    - incremental
+#  connectionSpecification:
+#    properties:
+#      endpoint_url:
+#        type: string
+#        title: Endpoint URL
+#        description: The URL of the destination endpoint.
+#  documentationUrl: 
+
