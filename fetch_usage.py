@@ -5,20 +5,28 @@ from email.mime.base import MIMEBase
 from email import encoders
 import csv
 from evergy.evergy import Evergy
+import json
+import os
 
 def fetch_usage_and_email():
+    # Load credentials from the config file
+    with open('config.json') as f:
+        config = json.load(f)
+        evergy_credentials = config["credentials"]
+
     # Initialize the Evergy client with your credentials
-    evergy = Evergy("esburmeister", "ha)VZYP@gu12")
+    evergy = Evergy(evergy_credentials["evergy_username"], evergy_credentials["evergy_password"])
 
     # Fetch the latest usage data
     data = evergy.get_usage()
 
     csv_filename = save_to_csv(data)
     if csv_filename:
-        send_email(csv_filename)
+        send_email(csv_filename, evergy_credentials)
 
 def save_to_csv(data):
-    csv_filename = "/home/burmlab/kWh/usage_report.csv"
+    current_directory = os.getcwd()
+    csv_filename = os.path.join(current_directory, 'usage_report.csv')
     try:
         with open(csv_filename, 'w', newline='') as csvfile:
             fieldnames = ['Date', 'Usage (kWh)', 'Demand (kWh)', 'Period', 'Cost', 'Bill Date', 
@@ -35,9 +43,9 @@ def save_to_csv(data):
         print(f"Failed to save to CSV: {e}")
         return None
 
-def send_email(csv_filename):
-    sender_email = "eric@burm.io"
-    receiver_email = "esburmeister@gmail.com"
+def send_email(csv_filename, credentials):
+    sender_email = credentials["smtp_sender_email"]
+    receiver_email = credentials["receiver_email"]
     subject = "Usage Report"
     body = "Please find attached the usage report CSV file."
 
@@ -58,8 +66,8 @@ def send_email(csv_filename):
     msg.attach(p)
 
     try:
-        with smtplib.SMTP_SSL("mail.privateemail.com", 465) as server:
-            server.login(sender_email, "LT2kk2gbnc")  # Replace with your account password
+        with smtplib.SMTP_SSL(credentials["smtp_server"], credentials["smtp_port"]) as server:
+            server.login(sender_email, credentials["smtp_sender_password"])
             server.sendmail(sender_email, receiver_email, msg.as_string())
         print("Email sent successfully!")
     except Exception as e:

@@ -7,7 +7,6 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
 import json
-import os
 
 def fetch_weather_and_send_email():
     try:
@@ -19,9 +18,9 @@ def fetch_weather_and_send_email():
             smtp_sender_password = config["credentials"]["smtp_sender_password"]
             smtp_server = config["credentials"]["smtp_server"]
             smtp_port = config["credentials"]["smtp_port"]
-            lat = config["weather_coordinates"]["latitude"]
-            lon = config["weather_coordinates"]["longitude"]
-            if api_key is None or receiver_email is None or smtp_sender_email is None or smtp_sender_password is None or smtp_server is None or smtp_port is None or lat is None or lon is None:
+            lat = config.get("coordinates", {}).get("lat")
+            lon = config.get("coordinates", {}).get("lon")
+            if None in (api_key, receiver_email, smtp_sender_email, smtp_sender_password, smtp_server, smtp_port, lat, lon):
                 raise ValueError("Missing configuration in config.json.")
     except FileNotFoundError:
         raise FileNotFoundError("Configuration file not found.")
@@ -80,5 +79,6 @@ def send_email(csv_data, receiver_email, smtp_sender_email, smtp_sender_password
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-fetch_weather_and_send_email()
+if __name__ == "__main__":
+    fetch_weather_and_send_email()
 

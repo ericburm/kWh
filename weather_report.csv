@@ -1,2 +1,2 @@
-Location,Coordinates,Weather Condition,Temperature,Feels like,Min Temperature,Max Temperature,Pressure,Humidity,Visibility,Wind Speed,Wind Direction,Cloudiness,Sunrise,Sunset,Date
-Weatherby Lake,"{'lon': -94.6648, 'lat': 39.2379}",few clouds,22.45,21.9,21.05,23.87,1000,44,10000,4.63,270,20,06:12:40,20:17:40,2024-05-07
+Location,Coordinates,Weather Condition,Temperature (°C),Feels like (°C),Min Temperature (°C),Max Temperature (°C),Pressure (hPa),Humidity (%),Visibility (m),Wind Speed (m/s),Wind Direction (°),Cloudiness (%),Sunrise,Sunset,Date
+"Weatherby Lake, US","{'lon': -94.6648, 'lat': 39.2379}",overcast clouds,17.69,17.5,16.27,20.48,999,76,10000,5.14,110,100,06:11:37,20:18:39,2024-05-08

@@ -2,13 +2,17 @@ import requests
 from datetime import datetime
 import json
 
-def fetch_weather(lat, lon):
+def fetch_weather():
     try:
         with open("config.json") as config_file:
             config = json.load(config_file)
             api_key = config.get("api_key")
             if api_key is None:
                 raise ValueError("API key not found in the configuration file.")
+            lat = config.get("coordinates", {}).get("lat")
+            lon = config.get("coordinates", {}).get("lon")
+            if lat is None or lon is None:
+                raise ValueError("Coordinates not found in the configuration file.")
     except FileNotFoundError:
         raise FileNotFoundError("Configuration file not found.")
     except json.JSONDecodeError:
@@ -21,7 +25,7 @@ def fetch_weather(lat, lon):
     if response.status_code == 200:
         print("Weather data retrieved successfully:")
         print("Location:", data['name'], data['sys']['country'])
-        print("Coordinates:", data['coord'])
+        print("Coordinates: Hidden")
         print("Weather Condition:", data['weather'][0]['description'])
         print("Temperature: {} °C".format(data['main']['temp']))
         print("Feels like: {} °C".format(data['main']['feels_like']))
@@ -39,9 +43,6 @@ def fetch_weather(lat, lon):
     else:
         print("Failed to fetch weather data")
 
-# Coordinates for Kansas City area
-lat = 39.237864
-lon = -94.664846
-
-fetch_weather(lat, lon)
+if __name__ == "__main__":
+    fetch_weather()
 
