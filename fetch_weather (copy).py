@@ -1,12 +1,23 @@
 import requests
-from datetime import datetime  # Import the datetime class from the datetime module
+from datetime import datetime
+import json
 
 def fetch_weather(lat, lon):
-    api_key = "8a251e91ce924b26d0703c2fbd6b8d71"  # Your API key
+    try:
+        with open("config.json") as config_file:
+            config = json.load(config_file)
+            api_key = config.get("api_key")
+            if api_key is None:
+                raise ValueError("API key not found in the configuration file.")
+    except FileNotFoundError:
+        raise FileNotFoundError("Configuration file not found.")
+    except json.JSONDecodeError:
+        raise ValueError("Invalid JSON format in the configuration file.")
+
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&lang=en&appid={api_key}"
     response = requests.get(url)
     data = response.json()
-    
+
     if response.status_code == 200:
         print("Weather data retrieved successfully:")
         print("Location:", data['name'], data['sys']['country'])
