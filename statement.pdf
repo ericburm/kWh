@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Log In</title>
+<meta property="og:site_name" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Log In" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://www.evergy.com/log-in" />
+    <link rel="canonical" href="https://www.evergy.com/log-in" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="last-modified" content="2022-09-12@17:48:47 Z" />
+
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <metA http-equiv="Pragma" content="no-cache">
+    <metA http-equiv="Expires" content="-1">
+    <script type="text/javascript">
+        function domain(url) {
+            if (typeof url === "string") {
+                url = new URL(url);
+            }
+            return url.hostname.split('.').slice(-2).join('.').toLowerCase();
+        }
+        if (self !== top && domain(top.location) !== domain(self.location)) {
+            document.documentElement.style.display = 'none';
+        }
+    </script>
+    <script>
+        document.documentElement.className += 'js';
+    </script>
+    <link rel="shortcut icon" href="/evergy-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Content/KCPLCSS/css/global.css?v=1711654830">
+
+        <!-- Start PageRawScripts -->
+<script type="text/javascript">
+        function domain(url) {
+            if (typeof url === "string") {
+                url = new URL(url);
+            }
+            return url.hostname.split('.').slice(-2).join('.').toLowerCase();
+        }
+        if (self !== top && domain(top.location) !== domain(self.location)) {
+            document.documentElement.style.display = 'none';
+        }
+    </script>    <!-- End PageRawScripts -->
+    <!-- Start ThemeResources -->
+
+<script type="text/javascript">     var _elqQ = _elqQ || [];     _elqQ.push(['elqSetSiteId', '1739717246']);     _elqQ.push(['elqTrackPageView']);          (function () {         function async_load() {             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;             s.src = '//img04.en25.com/i/elqCfg.min.js';             var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);         }         if (window.addEventListener) window.addEventListener('DOMContentLoaded', async_load, false);         else if (window.attachEvent) window.attachEvent('onload', async_load);      })(); </script>    <!-- End ThemeResources -->
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({event:'ev.gtmChanged',gtmData:{division:'',territory:'',customerType:'R'}});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-54QPP4C');</script>
+<!-- End Google Tag Manager --></head>
+<body class="sc--normal-mode site--kcplcss "
+      >
+<div class="page">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54QPP4C"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    
+
+    
+
+<header id="header" class="header js-header">
+    <div class="utility-nav js-utility-nav" role="navigation" id="utility-nav">
+    <div class="utility-nav__inner-wrapper">
+        <div class="utility-nav__section">
+        
+</div><div class="utility-nav__section">
+    <nav class="utility-nav__link-list">
+    <ul class="nav-link-container">
+        
+    </ul>
+</nav>    
+</div>
+    </div>
+</div>
+
+<aside class="gtm-success-banner-container is-hidden" data-module="components/gtm/gtmCustomerTypeBanner">
+    <div class="gtm-success-banner">
+        <div class="gtm-success-banner__text-container">
+            <i class="icon icon-check"></i>
+            <p class="gtm-success-banner__text">
+                Thank you! Our website has now been customized to show Residential content.
+            </p>
+            <button class="bare-button icon icon-close js-banner-close"></button>
+        </div>
+    </div>
+</aside>
+
+
+<aside class="gtm-success-banner-container is-hidden" data-module="components/gtm/gtmSuccessBanner">
+    <div class="gtm-success-banner">
+        <div class="gtm-success-banner__text-container">
+            <i class="icon icon-check"></i>
+            <p class="gtm-success-banner__text">
+                Thank you! Our website has now been customized for your account location.
+            </p>
+            <button class="bare-button icon icon-close js-banner-close"></button>
+        </div>
+    </div>
+</aside>
+
+
+<!--
+ UI:  Need to duplicate the aside section above (GTM SuccessMessage) for handling the Success Message when the Customer Type changes.  Please use "custType" as the querystring parameter for this.
+    This is the varible for the message
+    Thank you! Our website has now been customized to show Residential content.
+-->
+
+
+<nav class="primary-nav box-shadow--bottom" role="menu" aria-label="Evergy">
+    <div class="primary-nav__inner-container">
+        <div class="primary-nav__section">
+            <a href="/" class="logo-link">
+                <picture class="logo">
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="/Content/EVERGY/images/logo.png" media="(min-width: 25em)">
+                    <source srcset="/Content/EVERGY/images/logo-sm.png" media="(max-width: 24.99em)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img class="logo-image" srcset="/Content/EVERGY/images/mobile-header-logo.jpg" alt="">
+                </picture>
+            </a>
+        </div>
+
+        <div class="primary-nav__section">
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav-outer-container">
+    <div class="mobile-nav-header">
+        <a href="/" class="logo-link">
+            <picture class="logo">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="/Content/EVERGY/images/logo.png" media="(min-width: 25em)">
+                <source srcset="/Content/EVERGY/images/logo-sm.png" media="(max-width: 24.99em)">
+                <!--[if IE 9]></video><![endif]-->
+                <img class="logo-image" srcset="/Content/EVERGY/images/mobile-header-logo.jpg" alt="">
+            </picture>
+        </a>
+    </div>
+    <nav class="mobile-nav is-hidden">
+        <div class="mobile-nav__account-info">
+            <div class="mobile-nav__account-info-container">
+                <button class="bare-button bare-button--blue-text mobile-nav__item icon-location-pin has-icon mobile-nav__gtm-toggle plus-icon js-gtm-toggle">
+                    Select Your Location
+                </button>
+                <div class="gtm-nav gtm-nav--mobile is-hidden js-gtm-nav">
+                    <div class="gtm-nav__container js-gtm-container-mobile"></div>
+                </div>
+            </div>
+
+            <div class="account-info__selection--mobile">
+                <form class="account-info__selection-form">
+                    <div class="account-info__selection-group">
+                        <input type="radio" class="account-info__selection-input is-vishidden" id="residential-mobile" name="account-type" value="residential" checked>
+                        <label class="account-info__selection-label" for="residential-mobile">Residential</label>
+                    </div>
+                    <div class="account-info__selection-group">
+                        <input type="radio" class="account-info__selection-input is-vishidden" id="business-mobile" name="account-type" value="business" >
+                        <label class="account-info__selection-label" for="business-mobile">Business</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <nav class="mobile-nav__primary-link-container">
+            <ul class="mobile-nav__container">
+            </ul>
+        </nav>
+
+        <div class="mobile-nav__search-container">
+            <button class="mobile-nav__item mobile-search-toggler js-search-toggler-mobile has-icon icon-search">Search</button>
+            <form id="search-form" class="search-form is-hidden" action="/search" method="get">
+                <input autocomplete="off" name="q" id="search-input" type="search" placeholder="Search" class="input search-form__input" data-autocomplete data-autocomplete-api="/sc-api/sitesearch" />
+                <button type="submit" id="search-button" class="button header-search__button button--secondary">search</button>
+                <span class="icon spinner--loading is-hidden"></span>
+            </form>
+        </div>
+
+        <nav>
+            <ul class="mobile-nav__link-list">
+                <li class="mobile-nav__link-container">
+                    
+                </li>
+                <li class="mobile-nav__link-container">
+                    
+                </li>
+            </ul>
+        </nav>
+    </nav>
+</div>
+</header>
+
+    <div class="page-width content-wrap">
+        <main class="site-main">
+            <main class="site-main">
+        <h1 class="page-title ">Welcome</h1>
+       
+    <div class="js-timer-has-expired-display"></div>
+    <div class="grid grid--stack login-container" data-module="components/loginAndRegistration">
+        <div class="grid-cell grid-cell--30">
+            <form class="login-form component" method="post" data-loading-form>
+                <input name="evrgaf" type="hidden" value="S2TJ2zTDrC2p5VGu1MwDqUxuWHEGWClsGt5sDLY83e1hfTxZPh7Bh7WsWbuHZfkV9HRYNg3pDggcEFpo8GsS75eF2x_3VPX2Xflo9WEn05Y1" />
+                <fieldset>
+                    <div class="field  login-form__text-field js-field">
+                        <label for="username" class="field__label is-vishidden ">Username</label>
+                        <input class="field__input js-field-input" data="data-cs-mask" id="username" name="Username" placeholder="Username" required="" type="text" value="" />
+                    </div>
+                    <div class="field  login-form__text-field js-field">
+                        <label for="password" class="field__label is-vishidden ">Password</label>
+                        <input class="field__input js-field-input" data="data-cs-mask" id="password" name="Password" placeholder="Password" required="" type="password" />
+                    </div>
+                    <button class="button" type="submit" data-loading-element>Log In</button>
+                    <span class="icon spinner--loading is-hidden" data-spinner-element></span>
+                    <div class="field  ">
+                        <input class="field__input" id="rememberUsername" name="Remember" type="checkbox" value="true" /><input name="Remember" type="hidden" value="false" />
+                        <label for="rememberUsername" class="field__label ">Remember Username</label>
+                    </div>
+                    <input id="IsPodSubmission" name="IsPodSubmission" type="hidden" value="False" />
+                    <a href="/recovery">Forgot username or password?</a>
+                </fieldset>
+            </form>
+        </div>
+        <div class="grid-cell grid-cell--70">
+            <div class="register-tease component">
+                <h2 class="register-tease__heading">Don&#39;t have online access?</h2>
+                <p class="register-tease__description">You&#39;ll need your account number to complete registration.</p>
+                <a class="button button--reversed" href="https://www.evergy.com/portals/registration">Register Now</a>
+            </div>
+        </div>
+    </div>
+</main>
+        </main>
+    </div>
+    <footer class="site-footer" role="contentinfo">
+        
+
+<footer class="footer">
+    <a href="#header" class="back-to-top-link icon icon-back-to-top">Back to Top</a>
+    
+    <div class="page-width footer__inner-wrap">
+        <div class="footer-links">
+    
+<nav class="footer-nav footer-section">
+    <h3 class="footer-nav__heading footer-section__heading">
+        About Evergy
+    </h3>
+    <button class="footer-nav__toggle footer-section__heading content-toggler__toggle">
+        About Evergy
+    </button>
+    <ul class="footer-nav__list footer-section__content">
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/about-evergy/our-company" target="">Our Company</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/about-evergy/diversity-equity-inclusion" target="">Diversity, Equity &amp; Inclusion</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/about-evergy/history" target="">History</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/about-evergy/customer-advisory-panel" target="">Customer Advisory Panel</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="https://newsroom.evergy.com/newsroom" target="">Newsroom</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="https://investors.evergy.com/" target="">Investor Relations</a>
+                </li>
+    </ul>
+</nav>
+
+<nav class="footer-nav footer-section">
+    <h3 class="footer-nav__heading footer-section__heading">
+        Careers
+    </h3>
+    <button class="footer-nav__toggle footer-section__heading content-toggler__toggle">
+        Careers
+    </button>
+    <ul class="footer-nav__list footer-section__content">
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/careers/search-jobs" target="">Search Jobs</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/careers/diversity" target="">Diversity</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/careers/culture" target="">Culture</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/careers/benefits" target="">Benefits</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/careers/internships" target="">Internships</a>
+                </li>
+    </ul>
+</nav>
+
+<nav class="footer-nav footer-section">
+    <h3 class="footer-nav__heading footer-section__heading">
+        Community
+    </h3>
+    <button class="footer-nav__toggle footer-section__heading content-toggler__toggle">
+        Community
+    </button>
+    <ul class="footer-nav__list footer-section__content">
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/community/safety" target="">Safety</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/community/community-involvement" target="">Community Involvement</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/smart-energy/environmental-impact" target="">Environment</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="https://evergy-safety.com/educator/" target="">Kids and Education</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/community/donations-authentication" target="">Donations</a>
+                </li>
+    </ul>
+</nav>
+
+<nav class="footer-nav footer-section">
+    <h3 class="footer-nav__heading footer-section__heading">
+        Partner with Us
+    </h3>
+    <button class="footer-nav__toggle footer-section__heading content-toggler__toggle">
+        Partner with Us
+    </button>
+    <ul class="footer-nav__list footer-section__content">
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/partner-with-us/trade-allies" target="">Trade Allies</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/partner-with-us/contractors" target="">Contractors</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/partner-with-us/suppliers" target="">Suppliers</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/partner-with-us/construction-and-upgrades" target="">Construction &amp; Upgrades</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="/partner-with-us/transmission-projects" target="">Transmission Projects</a>
+                </li>
+                <li class="footer-nav__item footer-section__content-item no-padding">
+                    <a class="footer-nav__link" href="https://www.evergyed.com/" target="">Economic Development</a>
+                </li>
+    </ul>
+</nav>
+
+<div class="footer-section footer-section--help-lines">
+    <h3 class="footer-section__heading">
+        Help Lines
+    </h3>
+    <div class="footer-section__content">
+        <div class="footer-section__content-item">
+    <p>Report outage: 1-888-544-4852</p>
+    
+</div>
+<div class="footer-section__content-item">
+    <p>Call 811 before you dig</p>
+    
+</div>
+<div class="footer-section__content-item">
+    <p></p>
+    <p><a href="https://www.evergy.com/help-center" style="font-size:13px !important;">Help Center</a></p>
+</div>
+<div class="footer-section__content-item">
+    <p></p>
+    <p><a href="https://www.evergy.com/sitemap" style="font-size:13px !important;">Sitemap</a></p>
+</div>
+<div class="footer-section__content-item">
+    <p></p>
+    <div style="text-align:center;"><a rel="noopener noreferrer" href="https://apps.apple.com/us/app/evergy-electric/id1642746185" target="Opens in Apple store"><img src="https://www.evergy.com/-/media/media/contact-us/apple-store-image-2023-01.png" style="margin:0;width:160px;" alt="Link to Download Evergy app on the Apple App Store" /></a>&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=com.evergy.css&amp;hl=en&amp;gl=US" target="Opens in Google Play store" rel="noopener noreferrer"><img src="https://www.evergy.com/-/media/media/contact-us/google-play-store-image-2023-01.png" alt="Link to Get Evergy app on the Google Play Store" style="margin:0;width:160px;" /></a></div>
+</div>
+
+    </div>
+</div>
+
+</div>
+
+    </div>
+</footer>
+<div class="copyright">
+    <div class="page-width copyright-column-2">
+        <div class="copyright-txt">
+            <a href="https://www.evergy.com/privacy-policy">Privacy Policy</a>
+            <span>&nbsp;|&nbsp;</span>
+            <a href="https://www.evergy.com/terms-and-conditions">Terms and Conditions</a>
+            <span>&nbsp;|&nbsp;</span>
+            <a href="https://www.evergy.com/about-evergy/accessibility-standards">Accessibility Standards</a>
+            <br />
+            Copyright 2024 Evergy All Rights Reserved
+        </div>
+        <!-- Begin DigiCert site seal HTML and JavaScript -->
+        <div class="digicert-seal is-vishidden">
+            <div id="DigiCertClickID_CbyMMTXw" data-language="en">
+                <a href="https://www.digicert.com/wildcard-ssl-certificates.htm"></a>
+            </div>
+            <script type="text/javascript">
+                var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_CbyMMTXw", "3","m", "black", "CbyMMTXw"]);
+                (function(){var cid=document.createElement("script");cid.async=true;cid.src="//seal.digicert.com/seals/cascade/seal.min.js";var s = document.getElementsByTagName("script");var ls = s[(s.length - 1)];ls.parentNode.insertBefore(cid, ls.nextSibling);}());
+            </script>
+        </div>
+        <!-- End DigiCert site seal HTML and JavaScript -->
+        <div class="social-footer">
+    <div class="social footer-section">
+        <div class="footer-section__content">
+            <ul class="social__list footer-section__content-item">
+                    <li><a href="https://www.facebook.com/EvergyPower/" target=""><img src="/-/media/media/social/tempfacebook/icon_fb_38x39/facebook.png" alt="Facebook" /></a></li>
+                    <li><a href="https://www.twitter.com/evergypower" target=""><img src="/-/media/media/social/twitter/twitter/twitter.png" alt="Twitter" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAzdlieirXso2a1k90zLP7Q?view_as=subscriber" target=""><img src="/-/media/media/social/youtube/icon_youtube_39x39/youtube.png" alt="YouTube" /></a></li>
+                    <li><a href="https://www.linkedin.com/company/evergyco/" target=""><img src="/-/media/media/social/linkedin/in2c41pxr/linkedin.png" alt="LinkedIn" /></a></li>
+            </ul>
+        </div>
+</div>
+
+</div>
+    </div>
+</div>
+
+    </footer>
+</div>
+    
+<script>
+// ForeSee Production Embed Script v2.01
+// DO NOT MODIFY BELOW THIS LINE *****************************************
+;(function (g) {
+  var d = document, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0], fsr = 'fsReady',
+  aex = { 
+    "src": "//gateway.foresee.com/sites/kcpl-evergy/production/gateway.min.js",
+    "type": "text/javascript", 
+    "async": "true", 
+    "data-vendor": "fs", 
+    "data-role": "gateway" 
+  };
+  for (var attr in aex) { am.setAttribute(attr, aex[attr]); } h.appendChild(am); g[fsr] || (g[fsr] = function () { var aT = '__' + fsr + '_stk__'; g[aT] = g[aT] || []; g[aT].push(arguments); });
+})(window);
+// DO NOT MODIFY ABOVE THIS LINE *****************************************
+
+// Un-comment out the function below when you are ready to input your variable
+fsReady(function() { 
+  FSR.CPPS.set('Territory',''); // use single quotes when passing a static-value 
+  FSR.CPPS.set('OPCO',''); // use single quotes when passing a static-value 
+
+});
+</script>    <script src="/Scripts/KCPLCSS/jspm_packages/system.js"></script>
+    <script src="/Scripts/KCPLCSS/config.js?v=1711654830"></script>
+    <script>
+        System.import('main');
+    </script>
+</body>
+</html>

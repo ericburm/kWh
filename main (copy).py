@@ -1,9 +1,13 @@
+import logging
+from datetime import datetime
+from fastapi import FastAPI, Request
 import json
 import requests
-import logging
 
-# Configure logging
-logging.basicConfig(filename='weather.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+
+app = FastAPI()
 
 def get_api_key():
     try:
@@ -38,7 +42,7 @@ def fetch_weather(lat, lon):
 def send_weather_data(lat, lon):
     try:
         weather_data = fetch_weather(lat, lon)
-        url = "http://localhost:8080/weather"  # Adjust URL if necessary
+        url = "http://localhost:8000/weather"  # Adjust URL if necessary
         headers = {"Content-Type": "application/json"}
         response = requests.post(url, json=weather_data, headers=headers)
         response.raise_for_status()  # Raise an error for HTTP status codes >= 400
@@ -48,9 +52,24 @@ def send_weather_data(lat, lon):
     except Exception as e:
         logging.error("An unexpected error occurred while sending weather data: %s", e)
 
-if __name__ == "__main__":
-    # Example usage
-    latitude = 51.51  # Example latitude
-    longitude = -0.13  # Example longitude
-    send_weather_data(latitude, longitude)
+# Function to fetch and store usage data
+@app.post("/usage")
+async def fetch_and_store_usage_data(request: Request):
+    try:
+        # Add your logic to fetch and store usage data here
+        # For now, let's just return a dummy response
+        return {"message": "Usage data fetched and stored successfully"}
+    except Exception as e:
+        logging.error("An unexpected error occurred while fetching and storing usage data: %s", e)
+        return {"error": f"An unexpected error occurred while fetching and storing usage data: {e}"}
+
+# Function to fetch and store weather data
+@app.post("/weather")
+async def fetch_and_store_weather_data(lat: float, lon: float):
+    try:
+        send_weather_data(lat, lon)
+        return {"message": "Weather data fetched and stored successfully"}
+    except Exception as e:
+        logging.error("An unexpected error occurred while fetching and storing weather data: %s", e)
+        return {"error": f"An unexpected error occurred while fetching and storing weather data: {e}"}
 
