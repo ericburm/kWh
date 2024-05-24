@@ -1,8 +1,11 @@
-# ⚡Evergy API -> PostgreSQL
-# ⚡Evergy ebill -> ChatGPT -> PostgreSQL
-# PostgreSQL -> Metabase
+# ⚡Evergy Usage & Solar Production Dashboard
+<span style="font-size: 24px;">Evergy API → PostgreSQL</span>
+<br>
+<span style="font-size: 24px;">Evergy ebill → ChatGPT → PostgreSQL</span>
+<br>
+<span style="font-size: 24px;">PostgreSQL → Metabase</span>
 
-> **Note: This is an unofficial utility that uses Evergy's non-public API.**
+> **Note: This is uses Evergy's non-public API.**
 
 ![kWh Data Pipeline](images/kWh.png)
  
