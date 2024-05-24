@@ -1,4 +1,6 @@
-# ⚡Evergy Client
+# ⚡Evergy API -> PostgreSQL
+# ⚡Evergy ebill -> ChatGPT -> PostgreSQL
+# PostgreSQL -> Metabase
 
 > **Note: This is an unofficial utility that uses Evergy's non-public API.**
 
