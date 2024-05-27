@@ -7,7 +7,7 @@
 
 > **Note: This is uses Evergy's non-public API.**
 
-![kWh Data Pipeline](images/kWh.png)
+![kWh Data Pipeline](images/kWh-pipeline.png)
  
 ## Project Overview
 This project is a fork of the original Evergy Client by Lawrence Foley, enhanced to pull all available data from Evergy. It is integrated into a comprehensive data pipeline that automates the collection and analysis of Evergy e-bill and usage data.
