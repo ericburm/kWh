@@ -6,7 +6,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 import os
-import psycopg2
 
 # Get the current working directory
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -23,31 +22,13 @@ smtp_sender_password = config['credentials']['smtp_sender_password']
 smtp_server = config['credentials']['smtp_server']
 smtp_port = config['credentials']['smtp_port']
 receiver_email = config['credentials']['receiver_email']
-postgres_user = config['credentials']['postgres_user']
-postgres_password = config['credentials']['postgres_password']
-postgres_db = config['credentials']['postgres_db']
-postgres_host = config['credentials']['postgres_host']
-postgres_port = config['credentials']['postgres_port']
-
-# Connect to the PostgreSQL database and fetch the last eBill URL
-conn = psycopg2.connect(
-    dbname=postgres_db, 
-    user=postgres_user, 
-    password=postgres_password, 
-    host=postgres_host, 
-    port=postgres_port
-)
-cur = conn.cursor()
-cur.execute("SELECT link FROM links ORDER BY id DESC LIMIT 1;")
-ebill_url = cur.fetchone()[0]
-cur.close()
-conn.close()
 
 # Session to persist login
 session = requests.Session()
 
-# URL for Evergy login
+# URL for Evergy login and eBill
 login_url = 'https://www.evergy.com/log-in'
+ebill_url = 'https://www.evergy.com/api/document/ebill?payload=71CA44BB28417BD5400761D0A47FB551/6D7FF905A0735994DF0C3665608F6D5468FA20ADAB66076B39F5CA8636870DD86DC2E8E1A8B36A1AB61E0105012683690FC21B02D4C6B2F62BD3C61990A77025C387FB6BA8852CC0F8D3ABD88BFB7E4B6D327E991DB78D281FA378B4BF5C4B77FC8C113F314FC4EFCC192B2B229702E1D046C3ECDC52A09BD15C4496D647497A'
 
 def login():
     # Fetch the login form to get the CSRF token
